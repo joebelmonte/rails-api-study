@@ -41,7 +41,7 @@ In your own words, define what the responsibilities of the model layer are in
 Rails.
 
 ```md
-<!-- your answer here -->
+They are classes that talk to the database.
 ```
 
 ## Define Controller Responsibilities
@@ -50,7 +50,7 @@ In your own words, define what the responsibilities of the controller layer are
 in Rails.
 
 ```md
-<!-- your answer here -->
+They take input from the user and decide what to do with it.
 ```
 
 ## Define Router Responsibilities
