@@ -58,7 +58,8 @@ They take input from the user and decide what to do with it.
 In your own words, define what the router does in Rails.
 
 ```md
-<!-- your answer here -->
+It recognizes URLs and dispatches them to a controller's action.  When necessary,
+it can generate paths and URLS so that you don't have to on your own.
 ```
 
 ## The Request-Response Cycle in Rails
@@ -67,5 +68,12 @@ Starting with a client making a GET request to a particular URL, describe how
 the parts of Rails interact to produce and send a response.
 
 ```md
-<!-- your answer here -->
+- The web server receives the request, then finds which controller to use.
+- The web server uses the dispatcher to create a new controller, call the action, and
+  pass the parameters.
+- The controller parses the request/data submittion/cookies, etc.
+- It makes the appropriate request from the model for data.
+- The View generates HTML, CSS, XML, JavaScript, and JSON using data given to it by the controller.
+- The controller returns the response to the server.
+- The server combines the data into an HTTP response and sends it to the user.
 ```
